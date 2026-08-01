@@ -16,7 +16,7 @@
     },
     {
       "key": "WexAiReBo",
-      "name": "✧热播┃秒播✧",
+      "name": "✧热播┃影视✧",
       "type": 3,
       "api": "csp_WexAiReBoGuard",
       "searchable": 1,
@@ -25,7 +25,7 @@
     },
     {
       "key": "WexAiGuaZi",
-      "name": "✧瓜子┃秒播✧",
+      "name": "✧瓜子┃影视✧",
       "type": 3,
       "api": "csp_WexAiGuaZiGuard",
       "searchable": 1,
@@ -34,7 +34,7 @@
     },
     {
       "key": "WexAiDuBoKu",
-      "name": "✧独播┃秒播✧",
+      "name": "✧独播┃影视✧",
       "type": 3,
       "api": "csp_WexAiDuBoKuGuard",
       "searchable": 1,
@@ -46,15 +46,6 @@
       "name": "✧闪电┃秒播✧",
       "type": 3,
       "api": "csp_WexAiYueYueGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "key": "WexHanXiaoQuan",
-      "name": "✧韩剧┃秒播✧",
-      "type": 3,
-      "api": "csp_WexAiHanXiaoQuanGuard",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
@@ -78,44 +69,110 @@
       "changeable": 0
     },
     {
-      "key": "賤賤",
-      "name": "✧贱片┃秒播✧",
+      "key": "DuanJuAiHaoKan",
+      "name": "✧好看┃短剧✧",
       "type": 3,
-      "api": "csp_WexAiJianPianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "key": "WexAiYiYs",
-      "name": "✧伊影┃秒播✧",
-      "type": 3,
-      "api": "csp_WexAiYiYsGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "key": "AnimeAiMiaoWu",
-      "name": "✧喵呜┃动漫✧",
-      "type": 3,
-      "api": "csp_AnimeAiMiaoWuGuard",
+      "类型": "短剧",
+      "api": "csp_DuanJuAiHaoKanGuard",
       "searchable": 1,
       "changeable": 0
     },
     {
-      "key": "AnimeAiHuazi",
-      "name": "✧花海┃动漫✧",
+      "key": "DuanJuAiQiMiao",
+      "name": "✧小猫┃短剧✧",
       "type": 3,
-      "api": "csp_AnimeAiHuaziGuard",
+      "类型": "短剧",
+      "api": "csp_DuanJuAiQiMiaoGuard",
       "searchable": 1,
       "changeable": 0
     },
     {
-      "key": "AnimeAiMoDu",
-      "name": "✧魔都┃动漫✧",
+      "key": "DuanJuAiXingYa",
+      "name": "✧星星┃短剧✧",
       "type": 3,
-      "api": "csp_AnimeAiMoDuGuard",
+      "类型": "短剧",
+      "api": "csp_DuanJuAiXingYaGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "DuanJuAiWeiGuan",
+      "name": "✧小薇┃短剧✧",
+      "type": 3,
+      "类型": "短剧",
+      "api": "csp_DuanJuAiWeiGuanGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiLunHui",
+      "name": "✧轮回┃舞曲✧",
+      "type": 3,
+      "api": "csp_MusicAiLunHuiGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiTangDou",
+      "name": "✧跳舞┃教学✧",
+      "type": 3,
+      "api": "csp_MusicAiTangDouGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 2
+      }
+    },
+    {
+      "key": "MusicAiLiYuan",
+      "name": "✧戏曲┃秒播✧",
+      "type": 3,
+      "api": "csp_MusicAiLiYuanGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 2
+      }
+    },
+    {
+      "key": "MusicAiQingTing",
+      "name": "✧蜻蜓┃电台✧",
+      "type": 3,
+      "api": "csp_MusicAiQingTingGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiIKtv",
+      "name": "✧KTV┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAiIKtvGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiKuWoa",
+      "name": "✧小酷┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAiKuWoaGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAi163",
+      "name": "✧易听┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAi163Guard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiKuWo",
+      "name": "✧酷听┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAiKuWoGuard",
       "searchable": 1,
       "changeable": 0
     }
