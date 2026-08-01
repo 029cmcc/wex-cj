@@ -1,37 +1,51 @@
 {
   "sites_order": [
     "Douban",
+
     "WexAiReBo",
     "WexAiGuaZi",
     "WexAiDuBoKu",
     "WexAiYueYue",
-    "WexHanXiaoQuan",
     "WexAiV6DaShiXiong",
     "WexAiV6TeGou",
-    "賤賤",
-    "WexAiYiYs",
-    "AnimeAiFanShu",
-    "AnimeAiMiaoWu",
-    "AnimeAiHuazi",
-    "AnimeAiMoDu"
+
+    "DuanJuAiHaoKan",
+    "DuanJuAiQiMiao",
+    "DuanJuAiXingYa",
+    "DuanJuAiWeiGuan",
+
+    "MusicAiLunHui",
+    "MusicAiTangDou",
+    "MusicAiLiYuan",
+    "MusicAiQingTing",
+    "MusicAiIKtv",
+    "MusicAiKuWoa",
+    "MusicAi163",
+    "MusicAiKuWo"
   ],
 
   "rename": {
     "Douban": "✧豆瓣┃导航✧",
 
-    "WexAiReBo": "✧热播┃秒播✧",
-    "WexAiGuaZi": "✧瓜子┃秒播✧",
-    "WexAiDuBoKu": "✧独播┃秒播✧",
+    "WexAiReBo": "✧热播┃影视✧",
+    "WexAiGuaZi": "✧瓜子┃影视✧",
+    "WexAiDuBoKu": "✧独播┃影视✧",
     "WexAiYueYue": "✧闪电┃秒播✧",
-    "WexHanXiaoQuan": "✧韩剧┃秒播✧",
     "WexAiV6DaShiXiong": "✧师兄┃秒播✧",
     "WexAiV6TeGou": "✧太狗┃秒播✧",
-    "賤賤": "✧贱片┃秒播✧",
-    "WexAiYiYs": "✧伊影┃秒播✧",
 
-    "AnimeAiFanShu": "✧番薯┃动漫✧",
-    "AnimeAiMiaoWu": "✧喵呜┃动漫✧",
-    "AnimeAiHuazi": "✧花海┃动漫✧",
-    "AnimeAiMoDu": "✧魔都┃动漫✧"
+    "DuanJuAiHaoKan": "✧好看┃短剧✧",
+    "DuanJuAiQiMiao": "✧小猫┃短剧✧",
+    "DuanJuAiXingYa": "✧星星┃短剧✧",
+    "DuanJuAiWeiGuan": "✧小薇┃短剧✧",
+
+    "MusicAiLunHui": "✧轮回┃舞曲✧",
+    "MusicAiTangDou": "✧跳舞┃教学✧",
+    "MusicAiLiYuan": "✧戏曲┃秒播✧",
+    "MusicAiQingTing": "✧蜻蜓┃电台✧",
+    "MusicAiIKtv": "✧KTV┃音乐✧",
+    "MusicAiKuWoa": "✧小酷┃音乐✧",
+    "MusicAi163": "✧易听┃音乐✧",
+    "MusicAiKuWo": "✧酷听┃音乐✧"
   }
 }
