@@ -5,19 +5,20 @@
     "WexAiReBo",
     "WexAiGuaZi",
     "WexAiDuBoKu",
+
     "WexAiYueYue",
     "WexAiV6DaShiXiong",
+
+    "DuanJuAiHaoKan",
+    "DuanJuAiQiMiao",
+    "DuanJuAiXingYa",
+    "DuanJuAiWeiGuan",
 
     "MusicAiLunHui",
     "MusicAiQingTing",
     "MusicAiKuWoa",
     "MusicAi163",
-    "MusicAiKuWo",
-
-    "DuanJuAiHaoKan",
-    "DuanJuAiQiMiao",
-    "DuanJuAiXingYa",
-    "DuanJuAiWeiGuan"
+    "MusicAiKuWo"
   ],
 
   "rename": {
@@ -26,18 +27,19 @@
     "WexAiReBo": "✧热播┃影视✧",
     "WexAiGuaZi": "✧瓜子┃影视✧",
     "WexAiDuBoKu": "✧独播┃影视✧",
+
     "WexAiYueYue": "✧闪电┃秒播✧",
     "WexAiV6DaShiXiong": "✧师兄┃秒播✧",
+
+    "DuanJuAiHaoKan": "✧好看┃短剧✧",
+    "DuanJuAiQiMiao": "✧小猫┃短剧✧",
+    "DuanJuAiXingYa": "✧星星┃短剧✧",
+    "DuanJuAiWeiGuan": "✧小薇┃短剧✧",
 
     "MusicAiLunHui": "✧轮回┃舞曲✧",
     "MusicAiQingTing": "✧蜻蜓┃电台✧",
     "MusicAiKuWoa": "✧小酷┃音乐✧",
     "MusicAi163": "✧易听┃音乐✧",
-    "MusicAiKuWo": "✧酷听┃音乐✧",
-
-    "DuanJuAiHaoKan": "✧好看┃短剧✧",
-    "DuanJuAiQiMiao": "✧小猫┃短剧✧",
-    "DuanJuAiXingYa": "✧星星┃短剧✧",
-    "DuanJuAiWeiGuan": "✧小薇┃短剧✧"
+    "MusicAiKuWo": "✧酷听┃音乐✧"
   }
 }
