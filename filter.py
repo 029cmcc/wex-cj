@@ -1,10 +1,10 @@
 import json
 import urllib.request
+import os
 
 
 # ==========================
 # 源接口地址
-# 修改成你的原始 fish.json 地址
 # ==========================
 
 SOURCE = "https://9280.kstore.vip/aiwex.json"
@@ -19,7 +19,7 @@ OUTPUT_FILE = "fish.json"
 
 
 # ==========================
-# 读取配置
+# 读取JSON
 # ==========================
 
 def load_json(file):
@@ -35,7 +35,7 @@ def load_json(file):
 
 
 # ==========================
-# 保存文件
+# 保存JSON
 # ==========================
 
 def save_json(file, data):
@@ -61,16 +61,20 @@ def save_json(file, data):
 
 def fetch_source():
 
+    print()
+    print("====================")
+    print("正在获取接口:")
+    print(SOURCE)
+    print("====================")
+
+
     req = urllib.request.Request(
 
         SOURCE,
 
         headers={
-
-            # 必须英文
             "User-Agent":
             "Mozilla/5.0"
-
         }
 
     )
@@ -89,7 +93,7 @@ def fetch_source():
 
             text = response.read().decode(
 
-                "utf-8"
+                "utf-8-sig"
 
             )
 
@@ -101,16 +105,11 @@ def fetch_source():
     except Exception as e:
 
 
-        print(
+        raise Exception(
 
-            "获取源接口失败:",
-
-            e
+            f"接口获取失败: {e}"
 
         )
-
-
-        raise
 
 
 
@@ -121,41 +120,20 @@ def fetch_source():
 def main():
 
 
-    print(
-        "开始获取源接口..."
-    )
+    if not os.path.exists(CONFIG_FILE):
+
+        raise Exception(
+
+            "找不到 config.json"
+
+        )
 
 
-
-    cfg = load_json(
-
-        CONFIG_FILE
-
-    )
+    cfg = load_json(CONFIG_FILE)
 
 
 
     data = fetch_source()
-
-
-
-    order = cfg.get(
-
-        "sites_order",
-
-        []
-
-    )
-
-
-
-    rename = cfg.get(
-
-        "rename",
-
-        {}
-
-    )
 
 
 
@@ -169,12 +147,56 @@ def main():
 
 
 
-    temp = {}
+    if not source_sites:
+
+        raise Exception(
+
+            "源接口没有sites数据"
+
+        )
+
+
+
+    # 排序列表
+
+    order = cfg.get(
+
+        "sites_order",
+
+        []
+
+    )
+
+
+
+    # 名称替换
+
+    rename = cfg.get(
+
+        "rename",
+
+        {}
+
+    )
+
+
+
+    site_map = {}
+
+
+
+    print()
+
+    print(
+
+        "开始过滤站点..."
+
+    )
 
 
 
     # ======================
-    # 白名单过滤
+    # 过滤+改名
     # ======================
 
     for site in source_sites:
@@ -187,25 +209,39 @@ def main():
         )
 
 
+        if not key:
 
-        if key in order:
-
-
-            # 修改名称
-
-            if key in rename:
-
-                site["name"] = rename[key]
+            continue
 
 
 
-            temp[key] = site
+        if key not in order:
+
+            continue
+
+
+
+        # 复制对象
+
+        new_site = site.copy()
+
+
+
+        # 改名字
+
+        if key in rename:
+
+            new_site["name"] = rename[key]
+
+
+
+        site_map[key] = new_site
 
 
 
 
     # ======================
-    # 按指定顺序输出
+    # 按顺序输出
     # ======================
 
     sites = []
@@ -215,67 +251,35 @@ def main():
     for key in order:
 
 
-        if key in temp:
+        if key in site_map:
 
 
             sites.append(
 
-                temp[key]
+                site_map[key]
 
             )
 
 
 
+    if len(sites) == 0:
+
+        raise Exception(
+
+            "没有匹配到任何站点，请检查key"
+
+        )
+
+
 
     # ======================
-    # 生成结果
+    # 保留源接口全部字段
     # ======================
 
-    result = {
+    result = data.copy()
 
 
-        "spider":
-
-        data.get(
-
-            "spider",
-
-            ""
-
-        ),
-
-
-
-        "wallpaper":
-
-        data.get(
-
-            "wallpaper",
-
-            ""
-
-        ),
-
-
-
-        "logo":
-
-        data.get(
-
-            "logo",
-
-            ""
-
-        ),
-
-
-
-        "sites":
-
-        sites
-
-    }
-
+    result["sites"] = sites
 
 
 
@@ -289,59 +293,55 @@ def main():
 
 
 
-
     print()
 
+    print("====================")
+
     print(
 
-        "===================="
+        "生成完成"
 
     )
 
-
     print(
 
-        "采集站点生成完成"
-
-    )
-
-
-    print(
-
-        "数量:",
+        "站点数量:",
 
         len(sites)
 
     )
 
-
-    print(
-
-        "===================="
-
-    )
+    print("====================")
 
 
-    for s in sites:
 
+    for i, s in enumerate(
+
+        sites,
+
+        1
+
+    ):
 
         print(
 
-            s.get(
+            f"{i:02d}. {s.get('name','')}"
 
-                "name",
-
-                ""
-
-            )
+            f"  [{s.get('key','')}]"
 
         )
 
 
+    print("====================")
+
+    print(
+
+        f"输出文件: {OUTPUT_FILE}"
+
+    )
 
 
 
 if __name__ == "__main__":
-
 
     main()
