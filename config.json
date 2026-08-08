@@ -1,26 +1,4 @@
 {
-  "sites_order": [
-    "Douban",
-
-    "WexAiReBo",
-    "WexAiGuaZi",
-    "WexAiDuBoKu",
-
-    "WexAiYueYue",
-    "WexAiV6DaShiXiong",
-
-    "DuanJuAiHaoKan",
-    "DuanJuAiQiMiao",
-    "DuanJuAiXingYa",
-    "DuanJuAiWeiGuan",
-
-    "MusicAiLunHui",
-    "MusicAiQingTing",
-    "MusicAiKuWoa",
-    "MusicAi163",
-    "MusicAiKuWo"
-  ],
-
   "rename": {
     "Douban": "✧豆瓣┃导航✧",
 
@@ -41,5 +19,27 @@
     "MusicAiKuWoa": "✧小酷┃音乐✧",
     "MusicAi163": "✧易听┃音乐✧",
     "MusicAiKuWo": "✧酷听┃音乐✧"
-  }
+  },
+
+  "sites_order": [
+    "Douban",
+
+    "WexAiReBo",
+    "WexAiGuaZi",
+    "WexAiDuBoKu",
+
+    "WexAiYueYue",
+    "WexAiV6DaShiXiong",
+
+    "DuanJuAiHaoKan",
+    "DuanJuAiQiMiao",
+    "DuanJuAiXingYa",
+    "DuanJuAiWeiGuan",
+
+    "MusicAiLunHui",
+    "MusicAiQingTing",
+    "MusicAiKuWoa",
+    "MusicAi163",
+    "MusicAiKuWo"
+  ]
 }
