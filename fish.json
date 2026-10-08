@@ -4,6 +4,226 @@
   "logo": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif",
   "sites": [
     {
+      "key": "WexHanXiaoQuan",
+      "name": "💥韩剧┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAiHanXiaoQuanGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "WexAiGuaZi",
+      "name": "✧瓜子┃影视✧",
+      "type": 3,
+      "api": "csp_WexAiGuaZiGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "WexAiDuBoKu",
+      "name": "✧独播┃影视✧",
+      "type": 3,
+      "api": "csp_WexAiDuBoKuGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "WexAiYueYue",
+      "name": "✧闪电┃秒播✧",
+      "type": 3,
+      "api": "csp_WexAiYueYueGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "WexAiWenCai",
+      "name": "💥文才┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAiWenCaiGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "WexFengYe4K",
+      "name": "💥小枫┃秒播💥",
+      "type": 3,
+      "api": "csp_WexFengYe4KGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "賤賤",
+      "name": "💥贱片┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAiJianPianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "AppV7 | 大师兄",
+      "name": "💥师兄┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Dsx",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 粉猪追剧",
+      "name": "💥粉猪┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Fz",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 咸鱼",
+      "name": "💥咸鱼┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Xy",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 追剧达人",
+      "name": "💥追剧┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Zjdr",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 小柚子",
+      "name": "💥柚子┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Xyz",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 小柠檬",
+      "name": "💥柠檬┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Xnm",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 蒙太奇",
+      "name": "💥太奇┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Mtq",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 零零七影视",
+      "name": "💥零七┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Llq",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 小柿子",
+      "name": "💥柿子┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Xsz",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "AppV7 | 小黄人",
+      "name": "💥黄人┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAppV7Guard",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "config": "AppV7Xhr",
+        "proxyImg": false
+      },
+      "timeout": 120
+    },
+    {
+      "key": "WexAiYiYs",
+      "name": "💥伊影┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAiYiYsGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "WexAiReBo",
+      "name": "✧热播┃影视✧",
+      "type": 3,
+      "api": "csp_WexAiReBoGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "WexAiBoBo",
+      "name": "🎇伯伯┃秒播🎇",
+      "type": 3,
+      "api": "csp_WexAiBoBoGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
       "key": "ManJuAiHongGuo",
       "name": "🍉漫短┃小红🍉",
       "type": 3,
@@ -83,6 +303,66 @@
       "api": "csp_DuanJuAiWeiGuanGuard",
       "searchable": 1,
       "changeable": 0
+    },
+    {
+      "key": "MusicAiLiYuan",
+      "name": "🎎戏曲┃秒播🎎",
+      "type": 3,
+      "api": "csp_MusicAiLiYuanGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 2
+      }
+    },
+    {
+      "key": "MusicAiIKtv",
+      "name": "🎼KTV┃音乐🎼",
+      "type": 3,
+      "api": "csp_MusicAiIKtvGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiKuWoa",
+      "name": "✧小酷┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAiKuWoaGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAi163",
+      "name": "✧易听┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAi163Guard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "MusicAiKuWo",
+      "name": "✧酷听┃音乐✧",
+      "type": 3,
+      "api": "csp_MusicAiKuWoGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "少儿教育",
+      "name": "📚少儿┃教育📚",
+      "type": 3,
+      "api": "csp_BiliGuard",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/3C3AB7A_773_ertong_20250828171550247newMediaImage.txt"
+      }
     }
   ],
   "parses": [
