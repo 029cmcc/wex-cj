@@ -10,8 +10,8 @@ SOURCE = "https://9280.kstore.vip/aiwex.json"
 CONFIG_FILE = "config.json"
 OUTPUT_FILE = "fish.json"
 
-# ========== 【在这里配置允许保留的分类，按需修改】 ==========
-ALLOW_CATEGORIES = ["秒播", "短剧", "漫剧", "教育", "音乐"]
+# ========== 关键字白名单：站点名称包含下面任意一个就保留 ==========
+ALLOW_KEYWORDS = ["秒播", "短剧", "漫剧", "漫短", "教育", "音乐"]
 # ======================================================
 
 # ==========================
@@ -88,28 +88,27 @@ def main():
 
     print()
     print("====================")
-    print(f"开始按分类过滤站点，允许分类：{ALLOW_CATEGORIES}")
+    print(f"开始按站点名称关键字过滤，允许关键字：{ALLOW_KEYWORDS}")
     print("====================")
 
     filtered_sites = []
     for site in source_sites:
         key = site.get("key")
-        if not key:
+        site_name = site.get("name", "")
+        if not key or not site_name:
             continue
-        # 读取站点分类字段，兼容两种常见字段名：类型 / type_name
-        site_category = site.get("类型") or site.get("type_name", "")
-        # 判断是否在允许分类列表
-        if site_category not in ALLOW_CATEGORIES:
+        # 判断站点名称是否包含任意一个允许关键字
+        match = any(k in site_name for k in ALLOW_KEYWORDS)
+        if not match:
             continue
 
-        # 保留该站点，处理重命名（你不需要重命名，rename为空就不生效）
         new_site = site.copy()
         if key in rename:
             new_site["name"] = rename[key]
         filtered_sites.append(new_site)
 
     if len(filtered_sites) == 0:
-        raise Exception("没有匹配到任何站点，请检查分类名称是否和源接口一致！")
+        raise Exception("没有匹配到任何站点，请检查关键字！")
 
     result = data.copy()
     result["sites"] = filtered_sites
@@ -131,8 +130,9 @@ def main():
     print("时间:", end_time.strftime("%Y-%m-%d %H:%M:%S"))
     print("====================")
     for i, s in enumerate(filtered_sites, 1):
-        cat = s.get("类型") or s.get("type_name", "未知分类")
-        print(f"{i:02d}. {s.get('name','')} [{s.get('key','')}] 【分类:{cat}】")
+        name = s.get("name","")
+        cat = s.get("类型") or s.get("type_name", "未知")
+        print(f"{i:02d}. {name} [{s.get('key','')}] 【原分类:{cat}】")
     print("====================")
     print("输出文件:", OUTPUT_FILE)
     print("====================")
