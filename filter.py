@@ -8,7 +8,7 @@ from datetime import datetime, timezone, timedelta
 SOURCE = "https://9280.kstore.vip/aiwex.json"
 OUTPUT_FILE = "fish.json"
 # 筛选关键词，name包含其中任意一个就保留
-KEYWORDS = ["免费分享","秒播", "短剧","漫剧","课堂", "音乐"]
+KEYWORDS = ["免费分享","秒播", "短剧","漫剧", "音乐"]
 # ==========================
 # 读取 JSON
 # ==========================
